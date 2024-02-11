@@ -1,0 +1,47 @@
+<mat-tab-group mat-align-tabs="center">
+    <mat-tab label="{{ monedaEur.description}}">
+        <mat-card class="card">
+            <mat-card-title>
+                <div class="currency">
+                    <div class="currency-image">
+                        <img src="assets/img/euro.png" width="150" height="150" [alt]="monedaEur.description" [title]="monedaEur.description">
+                    </div>
+                    <div class="currency-rate">
+                        <mat-chip>Valor:</mat-chip>
+                        {{monedaEur.rate}}
+                    </div>
+                </div>
+            </mat-card-title>
+        </mat-card>
+    </mat-tab>
+    <mat-tab label="{{monedaUsd.description}}">
+        <mat-card class="card">
+            <mat-card-title>
+                <div class="currency">
+                    <div class="currency-image">
+                        <img src="assets/img/dollar.png" width="150" height="150" [alt]="monedaUsd.description" [title]="monedaUsd.description">
+                    </div>
+                    <div class="currency-rate">
+                        <mat-chip>Valor:</mat-chip>
+                        {{monedaUsd.rate}}
+                    </div>
+                </div>                
+            </mat-card-title>
+        </mat-card>
+    </mat-tab>
+    <mat-tab label="{{monedaGbp.description}}">
+        <mat-card class="card">
+            <mat-card-title>
+                <div class="currency">
+                    <div class="currency-image">
+                        <img src="assets/img/libra.png" width="145" height="145" [alt]="monedaGbp.description" [title]="monedaGbp.description">
+                    </div>
+                    <div class="currency-rate">
+                        <mat-chip>Valor:</mat-chip>
+                        {{monedaGbp.rate}}
+                    </div>
+                </div>                
+            </mat-card-title>            
+        </mat-card>
+    </mat-tab>
+</mat-tab-group>

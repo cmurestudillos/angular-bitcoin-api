@@ -1,0 +1,9 @@
+.fixed {
+    position: fixed;
+    bottom: 0%;
+}
+
+span {
+    color: white;
+    font-size: 15px;
+}
